@@ -25,7 +25,7 @@ public class HomeController {
   private Random rand = new Random(System.currentTimeMillis());
   
   /**
-   * Iterates stock list, update the price by randomly choosing a postive
+   * Iterates stock list, update the price by randomly choosing a positive
    * or negative percentage, then broadcast it to all subscribing clients
    */
   private void updatePriceAndBroadcast() {
@@ -61,7 +61,7 @@ public class HomeController {
   }
   
   /**
-   * Handler to remove one
+   * Handler to remove all stocks
    */
   @MessageMapping("/removeAllStocks")
   public void removeAllStocks() {
